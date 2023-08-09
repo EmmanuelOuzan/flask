@@ -1,0 +1,10 @@
+{
+    "general": [
+        {"timestamp": "2022-08-01 10:10:01", "username": "Alice", "message": "Hello everyone!"},
+        {"timestamp": "2022-08-01 10:15:45", "username": "Bob", "message": "Hi Alice!"}
+    ],
+    "tech": [
+        {"timestamp": "2022-08-02 11:00:00", "username": "Eve", "message": "Has anyone tried the new framework?"},
+        {"timestamp": "2022-08-02 11:05:30", "username": "Mallory", "message": "Not yet, is it good?"}
+    ]
+}
