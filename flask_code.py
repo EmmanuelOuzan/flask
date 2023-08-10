@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, render_template, request
 import json  # Working to JSON Files
 from datetime import datetime  # For message timestamp
@@ -47,7 +48,7 @@ def send(room):
         "username": request.form["username"],
         "message": request.form["msg"],
     }
-    chat_data[room].append(new_message)
+    chat_data[room].append(new_message) 
 
     # Writing back to the file in mode: Write
     with open("chat_data.json", "w") as file:
@@ -58,12 +59,3 @@ def send(room):
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
-
-
-# Backup Debug
-# username = request.form["username"]
-# message = request.form["msg"]
-
-# Print the values to the console for debugging
-# print("Username:", request.form["username"])
-# print("Message:", request.form["msg"])
